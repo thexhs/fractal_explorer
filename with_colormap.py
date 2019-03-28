@@ -5,8 +5,8 @@ import matplotlib.pyplot as plt
 
 from PyQt5.QtWidgets import (QDialog, QApplication, QPushButton, 
                              QVBoxLayout, QHBoxLayout, QLineEdit, 
-                             QListWidget, QCheckBox, QGroupBox,
-                             QGridLayout, QLabel)
+                             QListWidget, QCheckBox, QGridLayout, 
+                             QLabel)
 
 from PyQt5.QtCore import Qt
 #Для вставки виджета Matplotlib в окошко Qt
@@ -101,7 +101,6 @@ class Window(QDialog):
         my_controls.append(self.text6)
         #Создание контейнеров для виджетов
         layout1 = QHBoxLayout()
-        layout1_1 = QGroupBox('Fractal render window coordinates')
         layout1_2 = QGridLayout()
         layout2 = QVBoxLayout()
         layout3 = QHBoxLayout()
@@ -117,7 +116,6 @@ class Window(QDialog):
         layout1_2.addWidget(self.text2,1,2)
         layout1_2.addWidget(self.text3,2,1)
         layout1_2.addWidget(self.text4,2,2)
-        #layout1_1.setLayout(layout1_2)
         layout2.addLayout(layout1_2)
         layout2.addWidget(self.chbox1)
         layout2.addWidget(self.list1)
